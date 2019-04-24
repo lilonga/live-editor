@@ -1,6 +1,6 @@
 # @lilonga/live-editor
 
-> Modular live coding editor for React
+> Modular live-coding environment for React
 
 [![NPM](https://img.shields.io/npm/v/@lilonga/live-editor.svg)](https://www.npmjs.com/package/@lilonga/live-editor) 
 
