@@ -2,6 +2,12 @@
   "name": "@lilonga/live-editor",
   "version": "0.1.4",
   "description": "Modular live-coding environment for React",
+  "keywords": [
+    "ace",
+    "react",
+    "live",
+    "editor"
+  ],
   "author": "lilonga",
   "license": "MIT",
   "repository": "lilonga/live-editor",
@@ -47,7 +53,7 @@
     "dist"
   ],
   "dependencies": {
-    "@lilonga/code-editor":"latest",
+    "@lilonga/code-editor": "latest",
     "react-splitter-layout": "^4.0.0"
   }
 }
