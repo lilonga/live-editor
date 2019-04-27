@@ -13,7 +13,6 @@ export default class LiveEditor extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      input: this.props.input
     };
   }
   render() {
@@ -97,15 +96,14 @@ export default class LiveEditor extends React.Component {
             width={this.props.editorProps.width || "100%"}
             mode={this.props.editorProps.mode}
             onChange={input => {
-              this.setState({ input });
               this.props.onInputChange(input);
             }}
-            code={this.state.input}
+            code={this.props.input}
           />
 
           <OutputComponent
             {...this.props.outputProps}
-            input={this.state.input}
+            input={this.props.input}
           />
         </SplitterLayout>
       </div>
