@@ -29,8 +29,8 @@
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",
@@ -53,7 +53,7 @@
     "dist"
   ],
   "dependencies": {
-    "@lilonga/code-editor": "latest",
+    "@lilonga/code-editor": "0.1.5",
     "react-splitter-layout": "^4.0.0"
   }
 }
