@@ -2,7 +2,7 @@
 
 > Modular live-coding environment for React
 
-[![NPM](https://img.shields.io/npm/v/@lilonga/live-editor.svg)](https://www.npmjs.com/package/@lilonga/live-editor) 
+[![NPM](https://img.shields.io/npm/v/@lilonga/live-editor.svg)](https://www.npmjs.com/package/@lilonga/live-editor)
 
 ## Demo
 [![Demo](https://live-editor.lilo.now.sh/example/public/live-editor-srecord.gif)]
@@ -22,52 +22,51 @@ import React, { Component } from "react";
 
 import LiveEditor from "@lilonga/live-editor";
 import OutputIframe from "@lilonga/output-iframe";
-import "brace/mode/html";
 
 let iframeCode = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8"/>
-	<title>A title</title>
+  <meta charset="UTF-8"/>
+  <title>A title</title>
 </head>
 <body>
-	Hello world
+  Hello world
 </body>
 </html>
 
 `;
 
 class App extends Component {
-	constructor(){
-		super()
-		this.state = {
-			input:iframeCode,
-		}
-	}
-	render() {
-		return (
+  constructor(){
+    super()
+    this.state = {
+      input:iframeCode,
+    }
+  }
+  render() {
+    return (
 
-			<div>
-				<LiveEditor
-					input={this.state.input}
-					onInputChange={(input) => {
-						this.setState({input})
-					}}
-					editorProps={{
-						mode:'html'
-					}}
-					width={"100%"}
-					height={"400px"}
-					outputComponent={OutputIframe}
-					outputProps={{
+      <div>
+        <LiveEditor
+          input={this.state.input}
+          onInputChange={(input) => {
+            this.setState({input})
+          }}
+          editorProps={{
+            mode:'html'
+          }}
+          width={"100%"}
+          height={"400px"}
+          outputComponent={OutputIframe}
+          outputProps={{
 
-					}}
-				/>
-			
-			</div>
-		);
-	}
+          }}
+        />
+
+      </div>
+    );
+  }
 }
 
 export default App;
@@ -76,4 +75,4 @@ export default App;
 
 ## License
 
-MIT © [lilonga](https://github.com/lilonga)
+MIT © [Luka Kakia](https://github.com/manguluka)
