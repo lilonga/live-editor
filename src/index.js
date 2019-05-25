@@ -88,7 +88,9 @@ export default class LiveEditor extends React.Component {
 `
           }}
         />
-        <SplitterLayout vertical={this.props.vertical || false}>
+        <SplitterLayout
+          onDragEnd={() => window.dispatchEvent(new Event('resize'))}
+          vertical={this.props.vertical || false}>
           <CodeEditor
             {...this.props.editorProps}
             plugins={this.props.editorProps.plugins ? [ResizeAceHack,...this.props.editorProps.plugins] : [ResizeAceHack] }
