@@ -54,6 +54,7 @@
   ],
   "dependencies": {
     "@lilonga/code-editor": "0.1.5",
+    "react-reflex": "^3.0.13",
     "react-splitter-layout": "^4.0.0"
   }
 }
